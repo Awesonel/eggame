@@ -1,0 +1,12 @@
+version: '3.8'  # Версия docker-compose
+
+services:
+  postgres:
+    image: postgres:15  # Версия PostgreSQL (можно изменить при необходимости)
+    container_name: egg-game  # Название контейнера
+    environment:
+      POSTGRES_USER: egguser  # Имя пользователя для БД
+      POSTGRES_PASSWORD: eggpassword  # Пароль для пользователя
+      POSTGRES_DB: egg-game  # Название базы данных
+    ports:
+      - "5432:5432"  # Проброс порта для доступа к PostgreSQL
