@@ -1,8 +1,6 @@
 package com.example.isidorenko.eggame.entity
 
 import jakarta.persistence.*
-import org.hibernate.annotations.GenericGenerator
-import org.hibernate.annotations.Parameter
 
 @Entity
 @Table(name = "users")
